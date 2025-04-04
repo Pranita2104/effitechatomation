@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+        .img-fluid {
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        .img-fluid:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .logo-img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%; /* Makes the logo circular */
+        }
+        .company-name {
+            color: white; /* Ensures the company name is white */
+            font-size: 20px;
+            font-weight: bold;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 18px;
+            }
+            .logo-img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="h4logo.jpeg" alt="Logo" class="logo-img">
+                <span class="company-name">effiTech Automation Engineering Pvt Ltd</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="engg.html">Engineering</a></li>
+                            <li><a class="dropdown-item" href="integration.html">Integration</a></li>
+                            <li><a class="dropdown-item" href="control.html">Control System</a></li>
+                            <li><a class="dropdown-item" href="manufacture.html">Control Manufacturing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-4 p-4">
+        <h1>Our Services</h1>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <img src="c1.jpg" class="img-fluid" alt="Engineering">
+                <p class="caption">Engineering</p>
+            </div>
+            <div class="col-md-6 d-flex flex-column">
+                <div>
+                    <img src="c2.jpg" class="img-fluid" alt="Integration">
+                    <p class="caption">Integration</p>
+                </div>
+                <div>
+                    <img src="c3..jpg" class="img-fluid" alt="Control Systems">
+                    <p class="caption">Control Systems</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-4 text-start">
+            <div class="col-md-6">
+                <h2>Control System</h2>
+                <p>
+                    Our control systems team provides end-to-end automation solutions by combining expertise in modeling and simulating, controls design, robotics, software, programming, and facility automation.
+                </p>
+                <ul>
+                    <li>Process Controls</li>
+                    <li>Energy Metering and Conservation</li>
+                    <li>Auto Demand Response (ADR)</li>
+                    <li>Identification Systems</li>
+                </ul>
+            </div>
+            
+            <div class="col-md-6">
+                <p><strong>Forty years of control systems expertise and growing.</strong></p>
+                <p>Automation Engineering began as a controls engineering company and our expertise has advanced with each new automation technology development.</p>
+                <p><strong>We start by understanding your operations and processes.</strong></p>
+                <p>Our engineers work collaboratively with you to create a control system that uniquely benefits your operations.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 AEC Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Clinic</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f8f8;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #f8f7f5;
+        }
+        .logo img {
+            height: 60px;
+            width: auto;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .contact-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .contact-form input, .contact-form textarea {
+            border-radius: 5px;
+        }
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="h4logo.jpeg" alt="Logo"width="100" height="100">
+                <span>effiTech Automation Engineering Pvt Ltd
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="engg.html">Engineering</a></li>
+                            <li><a class="dropdown-item" href="integration.html">Integration</a></li>
+                            <li><a class="dropdown-item" href="contol.html">Control System</a></li>
+                            <li><a class="dropdown-item" href="manufacture.html">Control Manufacturing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Container -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+
+        <!-- Contact Info -->
+        <div class="contact-section p-3 mb-3">
+            <h2 data-bs-toggle="collapse" href="#contactInfo" class="text-primary">Get in Touch ⬇️</h2>
+            <div id="contactInfo" class="collapse show">
+                <p><strong>📍 Address:</strong> Magzine Chowk, Bhosari, Pin Code - 411015</p>
+                <p><strong>GST No.:</strong> 27BIRPA2473B1ZH</p>
+                <p><strong>📞 Phone:</strong> 9096720472</p>
+                <p><strong>📧 Email:</strong> effiTech@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-section p-3 mb-3">
+            <h2 data-bs-toggle="collapse" href="#contactForm" class="text-primary">Send Us a Message ⬇️</h2>
+            <form id="contactForm" class="collapse show">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Submit</button>
+            </form>
+        </div>
+
+        <!-- Google Map -->
+        <div class="contact-section p-3">
+            <h2 class="text-primary">Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098055!2d144.95592831568014!3d-37.81720974202151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c13f4e6c8d61b!2s123%20Main%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1649991234567"
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+</body>
+</html>

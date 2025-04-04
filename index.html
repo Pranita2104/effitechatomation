@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Engineering Co.</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: 500px;
+            margin: auto;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .slides {
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .active {
+            opacity: 1;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: #222;
+            color: white;
+        }
+        .markets img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+        .markets h2 {
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            padding: 30px 0;
+        }
+        .footer-links a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        .logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 10%;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 18px;
+            }
+            .logo-img {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    </style>
+
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex - 1].classList.add("active");
+        }
+
+        window.onload = function() {
+            showSlides();
+            document.querySelector(".slideshow-container").addEventListener("click", showSlides);
+        };
+    </script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="h4logo.jpeg" alt="Logo" width="100" height="100"  style="border-radius: 50%;">
+                <span>effiTech Automation Engineering Pvt Ltd
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviceDropdown" role="button" data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="engg.html">Engineering</a></li>
+                            <li><a class="dropdown-item" href="integration.html">Integration</a></li>
+                            <li><a class="dropdown-item" href="control.html">Control System</a></li>
+                            <li><a class="dropdown-item" href="manufacture.html">Control Manufacturing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <img class="slides active" src="h1.jpg" alt="Automation Solution 1">
+        <img class="slides" src="h2.jpg" alt="Automation Solution 2">
+        <img class="slides" src="h3.jpg" alt="Automation Solution 3">
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Real-world automation solutions for a moving world.</h1>
+            <p>We design, fabricate, and integrate industry-leading automation solutions.<br>
+                AEC is a premier machine builder and automation integrator that works with some of the world’s leading manufacturers.</p>
+            <a href="#markets" class="btn btn-warning mt-3">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section class="markets text-center py-5" id="markets">
+        <div class="container">
+            <h2>Markets We Serve</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="manufacturing.jpg" alt="Manufacturing">
+                </div>
+                <div class="col-md-3">
+                    <img src="markets-og.jpg" alt="Transport">
+                </div>
+                <div class="col-md-3">
+                    <img src="aerospace.jpg" alt="Aerospace">
+                </div>
+                <div class="col-md-3">
+                    <img src="automotive.jpg" alt="Automotive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <p class="footer-links">
+                        <a href="#home">Home</a> | 
+                        <a href="#markets">Markets</a> | 
+                        <a href="aboutus.html">About Us</a> |
+                        <a href="contact.html">Contact</a>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <p>
+                        <a href="#" class="text-white">Facebook</a> | 
+                        <a href="#" class="text-white">LinkedIn</a> | 
+                        <a href="#" class="text-white">Twitter</a>
+                    </p>
+                </div>
+            </div>
+            <p class="mt-3">&copy; 2025 Automation Engineering Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
